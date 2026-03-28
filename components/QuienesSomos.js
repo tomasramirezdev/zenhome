@@ -56,7 +56,7 @@ export default function QuienesSomos() {
             <div key={founder.name} className="bg-[#f7f5f0] flex flex-col">
 
               {/* Photo — full bleed, tall */}
-              <div className="relative w-full h-[340px] sm:h-[440px] lg:h-[520px] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+              <div className="relative w-full h-[340px] sm:h-[440px] lg:h-[520px] overflow-hidden md:grayscale md:hover:grayscale-0 transition-all duration-700">
                 <img
                   src={founder.image}
                   alt={founder.name}
