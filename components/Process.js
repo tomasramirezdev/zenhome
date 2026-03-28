@@ -41,7 +41,10 @@ export default function Process() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <div key={step.number} className="relative">
-<div className="relative z-10">
+              {index < steps.length - 1 && (
+                <div className="hidden lg:block absolute top-7 left-16 -right-4 h-px border-t border-dashed border-[#6aab7e]/40" />
+              )}
+              <div className="relative z-10">
                 <div className="w-14 h-14 rounded-full border-2 border-[#6aab7e] flex items-center justify-center mb-6">
                   <span className="text-[#6aab7e] font-semibold text-sm font-[family-name:var(--font-playfair)]">
                     {step.number}
