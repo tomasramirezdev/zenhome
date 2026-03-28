@@ -48,7 +48,7 @@ export default function Navbar() {
       {/* Pill container */}
       <div
         className={`w-full max-w-7xl pointer-events-auto transition-all duration-500 ${
-          scrolled || onLightSection || isSubpage
+          scrolled || onLightSection || isSubpage || menuOpen
             ? "bg-[#1a1a1a]/40 backdrop-blur-2xl rounded-3xl md:rounded-2xl shadow-lg ring-1 ring-white/10"
             : "bg-transparent"
         }`}
