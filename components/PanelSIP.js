@@ -119,6 +119,12 @@ export default function PanelSIP() {
                   <h3 className="text-[#1c1c1c] font-semibold text-base leading-snug">
                     {card.benefit}
                   </h3>
+                  {/* Mobile flip hint */}
+                  <div className="lg:hidden absolute right-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-[#f7f5f0] border border-[#3d7a52] flex items-center justify-center text-[#3d7a52]">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-4 h-4">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                  </div>
                 </div>
 
                 {/* Back */}
