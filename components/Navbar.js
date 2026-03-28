@@ -34,11 +34,13 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, []);
 
+  const prefix = isSubpage ? "/" : "";
+
   const links = [
-    { label: "Panel SIP", href: "#panel-sip" },
-    { label: "Viviendas", href: "#viviendas" },
-    { label: "Módulos Transportables", href: "#modulos" },
-    { label: "Proyectos a Medida", href: "#proyectos" },
+    { label: "Panel SIP", href: `${prefix}#panel-sip` },
+    { label: "Viviendas", href: `${prefix}#proyectos` },
+    { label: "Módulos Transportables", href: `${prefix}#modulos` },
+    { label: "Proyectos a Medida", href: `${prefix}#proceso` },
   ];
 
   return (
@@ -74,7 +76,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#contacto"
+              href={`${prefix}#contacto`}
               className="text-xs font-medium px-4 py-2 rounded-full bg-[#3d7a52] text-white hover:bg-[#2d5a3d] transition-colors"
             >
               Contáctanos
@@ -107,7 +109,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#contacto"
+              href={`${prefix}#contacto`}
               onClick={() => setMenuOpen(false)}
               className="text-xs font-medium px-4 py-2.5 rounded-full bg-[#3d7a52] text-white text-center hover:bg-[#2d5a3d] transition-colors"
             >
